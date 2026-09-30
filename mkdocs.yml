@@ -1,0 +1,13 @@
+site_name: "PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning"
+theme:
+  name: material
+  palette:
+    scheme: slate # 深色模式
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true # 啟用 LaTeX 數學公式解析

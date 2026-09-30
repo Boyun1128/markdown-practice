@@ -1,0 +1,845 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pigview-a-minimum-bounding-box-pig-weight-estimation-system-using-artificial-intelligence-deep-learning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning" class="md-header__button md-logo" aria-label="PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning 🐷
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning" class="md-nav__button md-logo" aria-label="PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning 🐷
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning 🐷
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 系統架構與邊緣部署 (System Architecture)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 系統架構與邊緣部署 (System Architecture)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 硬體規格與邊緣效能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-core-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 核心技術與特徵工程 (Core Methodology)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 核心技術與特徵工程 (Core Methodology)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-model-selection-hardware-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 輕量化模型選擇與硬體 (Model Selection &amp; Hardware Adaptation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-offline-augmentation-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 離線資料增強與框架限制克服 (Offline Augmentation Strategy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-mbb-mbb-single-pig-dataset-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 MBB 單一豬隻資料集建置與自動化標註 (MBB Single-Pig Dataset Construction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-area-to-weight-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 面積與物理體重映射模型 (Area-to-Weight Mapping)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-system-defense-domain-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 系統限制設計與實務考量 (System Defense &amp; Domain Knowledge)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 系統限制設計與實務考量 (System Defense & Domain Knowledge)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 空間限制與 ROI 辨識熱區
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 養殖實務考量**
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-empirical-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 實驗結果與效能評估 (Empirical Results)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 實驗結果與效能評估 (Empirical Results)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-mbb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 物件框尺寸比較實驗：MBB 之準確度驗證
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-3-week-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 實務場域動態體重預估驗證 (3-Week Tracking)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-milestones" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 專案里程碑與後續行動 (Milestones)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 系統架構與邊緣部署 (System Architecture)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 系統架構與邊緣部署 (System Architecture)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 硬體規格與邊緣效能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-core-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 核心技術與特徵工程 (Core Methodology)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 核心技術與特徵工程 (Core Methodology)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-model-selection-hardware-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 輕量化模型選擇與硬體 (Model Selection &amp; Hardware Adaptation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-offline-augmentation-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 離線資料增強與框架限制克服 (Offline Augmentation Strategy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-mbb-mbb-single-pig-dataset-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 MBB 單一豬隻資料集建置與自動化標註 (MBB Single-Pig Dataset Construction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-area-to-weight-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 面積與物理體重映射模型 (Area-to-Weight Mapping)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-system-defense-domain-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 系統限制設計與實務考量 (System Defense &amp; Domain Knowledge)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 系統限制設計與實務考量 (System Defense & Domain Knowledge)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 空間限制與 ROI 辨識熱區
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 養殖實務考量**
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-empirical-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 實驗結果與效能評估 (Empirical Results)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 實驗結果與效能評估 (Empirical Results)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-mbb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 物件框尺寸比較實驗：MBB 之準確度驗證
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-3-week-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 實務場域動態體重預估驗證 (3-Week Tracking)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-milestones" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 專案里程碑與後續行動 (Milestones)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="pigview-a-minimum-bounding-box-pig-weight-estimation-system-using-artificial-intelligence-deep-learning">PigView: A Minimum Bounding-Box Pig Weight Estimation System Using Artificial Intelligence Deep Learning 🐷</h1>
+<blockquote>
+<p><strong>Technical Specification &amp; System Architecture</strong></p>
+<p>本專案提出了一套基於人工智慧深度學習的非接觸式豬隻體重估算系統——<strong>PigView</strong>，專為評估與管理豬舍中豬隻的生長狀況而設計。透過配備模型推論能力的 AI 攝影機，本系統將裝置端邊緣運算 (Edge Computing) 與最佳物件框 (Minimum Bounding Box, MBB) 面積換算技術進行深度整合。</p>
+<p>PigView 不僅能輕鬆且具經濟效益地部署於養豬場，解決傳統人工量測費時、費力且具安全隱患的痛點；並透過設立 <strong>辨識熱區 (Region of Interest, ROI)</strong> 作為空間限制條件來篩選有效姿態，成功克服了動物姿態變形所造成的技術干擾。實驗結果表明，本系統能自動且精準地追蹤豬隻體重變化與生長趨勢，協助豬農優化飼養與生產效率，進而達成降低成本與提升收益的極高商業落地價值。</p>
+</blockquote>
+<h2 id="1-system-architecture">1. 系統架構與邊緣部署 (System Architecture)</h2>
+<p>本系統採用「單鏡頭即時推論」架構，以 ARM Cortex-A7 處理器與內建第二代深度學習加速器 (GPDLAv2) 的 GPA7750A SoC 作為運算主體 。整體系統的完整管線 (Pipeline) 如下圖所示：</p>
+<p><img alt="PigView System Architecture" src="architecture.png" /></p>
+<p><em>(圖 1：PigView 系統之軟硬體整合與單鏡頭即時推論管線圖)</em></p>
+<h3 id="11">1.1 硬體規格與邊緣效能</h3>
+<p>在邊緣運算場景中，硬體資源往往是最大瓶頸。本專案將嚴苛的硬體限制轉化為架構設計的基準，並達成極佳的效能平衡：
+- <strong>極端硬體限制</strong>: 運算核心 GPA7750A 算力上限為 <code>17.32 GFLOPs</code>。內建記憶體 (DDR2) 為 <strong><code>64 MB</code></strong>，且記憶體頻寬僅 <strong><code>1.6 GB/s</code></strong> 。
+- <strong>系統效能</strong>: 本系統穩定維持 <strong>15 FPS</strong> 的推論速度，符合實務農場的即時運算要求。</p>
+<h2 id="2-core-methodology">2. 核心技術與特徵工程 (Core Methodology)</h2>
+<h3 id="21-model-selection-hardware-adaptation">2.1 輕量化模型選擇與硬體 (Model Selection &amp; Hardware Adaptation)</h3>
+<p>針對邊緣硬體極度受限的運算資源，我們進行了深度學習模型的效能與實用性取捨分析。我們捨棄了龐大的最新網路架構，改為採用 <strong>MobileNetV2-YOLOv3-Lite</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>GFLOPs</th>
+<th>Model Size</th>
+<th>Mem Bandwidth</th>
+<th>Compatibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YOLOv11</td>
+<td>160</td>
+<td>100 MB</td>
+<td>18 GB/s</td>
+<td>❌ 不適用</td>
+</tr>
+<tr>
+<td><strong>YOLOv3-Lite</strong></td>
+<td><strong>3~4</strong></td>
+<td><strong>10~12 MB</strong></td>
+<td><strong>1 GB/s</strong></td>
+<td>✅ <strong>完全適配</strong></td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph TD;
+    A[專案需求: 即時單豬與群體豬辨識] --&gt; B{邊緣裝置運算資源評估};
+    B -- "GFLOPs &gt; 100" --&gt; C[YOLOv11 等先進模型&lt;br&gt;算力溢出, 捨棄];
+    B -- "GFLOPs &lt; 5" --&gt; D[選定 MobileNetV2-YOLOv3-Lite];
+    D --&gt; E[導入 GPA7750A 進行 64MB 記憶體極限部署];
+    E --&gt; F[達成穩定 15 FPS 推論效能];</code></pre>
+<p>儘管 YOLOv11 此類先進模型在整體理論精準度上具備優勢，但其高達 160 GFLOPs 的運算開銷根本無法落地於 64MB 記憶體的邊緣裝置。依據本專案的混淆矩陣實驗結果，MobileNetV2-YOLOv3-Lite 模型對於單一豬隻與群體豬隻兩者的 Recall 值皆高於0.94。</p>
+<p><img alt="MobileNetV2-YOLOv3-Lite &amp; YOLOv11 Confusion Matrix" src="combain.png" /> </p>
+<p><em>(圖 2：左為本專案採用之 MobileNetV2-YOLOv3-Lite 混淆矩陣，右為對照組 YOLOv11。證輕量化模型具高性價比與足夠的 Recall 表現。)</em></p>
+<h3 id="22-offline-augmentation-strategy">2.2 離線資料增強與框架限制克服 (Offline Augmentation Strategy)</h3>
+<p>為彌補輕量化模型在複雜場景下的先天限制，我們導入了嚴謹的<strong>離線增強 (Offline Augmentation)</strong> 策略，以最大化提升系統的泛化能力。基於本專案採用的 MobileNetV2-YOLOv3-Lite 是建構於底層的 <strong>Darknet 框架</strong> ，其原生的資料載入管線難以直接整合如 Albumentations 等現代化套件來執行高複雜度的動態線上資料增強 (Online Augmentation)。因此，我們果斷採取離線增強策略，預先透過亮度與對比度動態調整、馬賽克混合 (Mosaic) 等幾何與像素級變換，將基準資料大幅擴增至 20,000 張。此工程決策不僅解決了框架限制，更確保模型在真實豬舍的光影變化與環境雜訊中，依然能精準鎖定豬隻輪廓，提供穩定可靠的面積換算基準。</p>
+<h3 id="23-mbb-mbb-single-pig-dataset-construction">2.3 MBB 單一豬隻資料集建置與自動化標註 (MBB Single-Pig Dataset Construction)</h3>
+<p>本專案將未與其他個體重疊之影像定義為「<strong>單一豬隻 (Single-Pig)</strong>」。為突破傳統人工標註的效率瓶頸，本研究自主開發 <strong>LabelMini</strong> 自動化標註工具，專用於精準擷取能完美包覆豬隻軀幹的「<strong>最小物件框 (Minimum Bounding Box, MBB)</strong>」。</p>
+<p>針對單豬影像，LabelMini 會依序執行影像處理管線：<strong>灰階轉換 <span class="arithmatex">\(\rightarrow\)</span> 高斯模糊 <span class="arithmatex">\(\rightarrow\)</span> 二值化 <span class="arithmatex">\(\rightarrow\)</span> 邊緣檢測</strong>，以精確提取目標外觀輪廓。鎖定邊緣後，系統自動演算並生成具備「面積絕對最小」數學特性的矩形框 (MBB)。藉由此自動化流程，本專案得以極高效率大規模建構高準確度的單豬 MBB 資料集。</p>
+<p>最終，本系統採用 <strong>MobileNetV2-YOLOv3-Lite</strong> 作為核心模型 (Core Model)，並融合上述單豬與群體豬資料集進行聯合訓練，確保模型能精準偵測並適應落入 <strong>ROI (辨識熱區)</strong> 內的各類目標狀態，大幅強化實務場域之泛化能力。</p>
+<h3 id="24-area-to-weight-mapping">2.4 面積與物理體重映射模型 (Area-to-Weight Mapping)</h3>
+<p>基於固定投影面假設，系統提取 MBB 像素面積後，採用二次多項式迴歸 (Quadratic Polynomial Regression) 建立 2D 面積與 3D 重量之非線性映射關係。其核心數學模型定義如下：</p>
+<div class="arithmatex">\[
+\hat{W} = \alpha \cdot A_{MBB}^2 + \beta \cdot A_{MBB} + \gamma
+\]</div>
+<p>其中，<span class="arithmatex">\(\hat{W}\)</span> 為估測體重（公斤），<span class="arithmatex">\(A_{MBB}\)</span> 為單一豬隻之 MBB 像素面積，<span class="arithmatex">\(\alpha, \beta, \gamma\)</span> 為依據不同相機高度預先擬合之環境參數。</p>
+<p>為確保面積計算的穩定性，LabelMini 自動化標註管線的核心處理邏輯如下所示：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">extract_mbb</span><span class="p">(</span><span class="n">image_path</span><span class="p">):</span>
+    <span class="c1"># 1. 灰階與高斯去噪</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">IMREAD_GRAYSCALE</span><span class="p">)</span>
+    <span class="n">blurred</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># 2. Otsu 二值化與形態學處理 (去除泥污干擾)</span>
+    <span class="n">_</span><span class="p">,</span> <span class="n">binary</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">blurred</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">THRESH_BINARY</span> <span class="o">+</span> <span class="n">cv2</span><span class="o">.</span><span class="n">THRESH_OTSU</span><span class="p">)</span>
+    <span class="n">kernel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+    <span class="n">clean_binary</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">morphologyEx</span><span class="p">(</span><span class="n">binary</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">MORPH_OPEN</span><span class="p">,</span> <span class="n">kernel</span><span class="p">)</span>
+
+    <span class="c1"># 3. 邊緣檢測與最小物件框 (MBB) 生成</span>
+    <span class="n">contours</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">findContours</span><span class="p">(</span><span class="n">clean_binary</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">RETR_EXTERNAL</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CHAIN_APPROX_SIMPLE</span><span class="p">)</span>
+    <span class="n">largest_contour</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">contours</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">contourArea</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">boundingRect</span><span class="p">(</span><span class="n">largest_contour</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span> <span class="c1"># 回傳 MBB 座標與尺寸</span>
+</code></pre></div>
+<h2 id="3-system-defense-domain-knowledge">3. 系統限制設計與實務考量 (System Defense &amp; Domain Knowledge)</h2>
+<p>豬隻若呈現側躺或蜷縮等非標準姿勢，勢必導致面積失真與體重計算誤差。針對此技術限制，本專案捨棄了極度耗費算力的複雜演算法，轉而採用結合場域實務的最佳系統設計來解決：</p>
+<h3 id="31-roi">3.1 空間限制與 <strong>ROI 辨識熱區</strong></h3>
+<p>我們在 AI 攝影機中，建立了一個狹長型的 <strong>ROI(Region of Interest) 辨識熱區</strong>。此物理空間設計強制系統<strong>僅在豬隻「正向走入並直立通過」該熱區時，系統才會量測豬隻體重</strong>。透過這道物理限制，系統從最源頭直接排除了蜷縮、側躺等會導致面積計算誤差的無效姿勢，確保寫入資料庫的特徵皆具備高度的一致性與可靠度。</p>
+<h3 id="32">3.2 養殖實務考量**</h3>
+<p>針對「ROI 條件嚴苛可能導致每日成功記錄的樣本數較少」之疑慮，我們結合了第一線養豬場的管理經驗，確立了此一設計在真實場域中的高度合理性：</p>
+<ol>
+<li><strong>自動化量測的實務效益</strong>：傳統人工秤重極度耗時費力，且強制驅趕易引發豬隻嚴重的生理緊迫，進而影響健康與肉質。對農場管理者而言，只要系統能「每日自動記錄到部分數據」，就已經大幅省下了勞動力成本，實務上完全不需要強求 100% 的全時無差別追蹤。</li>
+<li><strong>豬圈群體生長一致性 (Pen-Level Growth Consistency)</strong>：依據養殖實務經驗，同一豬圈內飼養的豬隻由於採食條件與環境相同，其生長曲線具備高度一致性。因此，即使系統在 ROI 熱區內對同一隻頻繁走動的豬隻進行重複取樣，在統計學上（大數法則）反而能進一步平滑化單次量測的誤差，產生極度穩定的「豬圈平均生長趨勢線」。對農場目前的管理目標而言，掌握此群體趨勢已足以準確評估生長狀況。</li>
+<li><strong>模組化個體追蹤升級 (Modular Upgrade Path)</strong>：雖然目前合作農場以群體趨勢評估為主，但本系統架構已預留擴充彈性。未來若針對種豬或高價值個體有精細化管理需求，系統可無縫整合邊緣端目標追蹤演算法或結合實體 RFID 標籤，以達成從「群體平均估測」到「單一個體履歷」的全方位升級。</li>
+</ol>
+<h2 id="4-empirical-results">4. 實驗結果與效能評估 (Empirical Results)</h2>
+<h3 id="41-mbb">4.1 物件框尺寸比較實驗：MBB 之準確度驗證</h3>
+<p>為驗證「精確的物件框尺寸對體重估算的影響」，我們進行了不同框選策略的比較實驗。下圖展示了 MobileNetV2-YOLOv3-Lite 模型分別針對 MBB（精準框）、MBB-（縮小框）與 MBB+（放大框）單豬數據集預測後的效能對比。</p>
+<p>本實驗採用交集比聯集 (Intersection over Union, IoU) 作為性能指標，用以衡量預測物件框與實際標註框之間的重疊程度。實驗數據明確指出：在隨機抽樣的 30 筆測試樣本中，僅有基於 MBB 訓練的模型能將 IoU 穩定收斂至接近 1.0 的極高水準；反之，只要框選面積偏移基準，預測準確度皆呈現高度不穩定的震盪。這從數據層面給出了實證：<strong>精準貼合的 MBB 是面積計算準確度的最佳測量基準</strong>。</p>
+<p><img alt="Comparison of IOU performance of MobileNetV2-YOLOv3-Lite model with MBB, MBB-, and MBB+ single-pig datasets" src="mbb.png" /></p>
+<p><em>(圖 3：Comparison of IOU performance of MobileNetV2-YOLOv3-Lite model with MBB, MBB-, and MBB+ single-pig datasets.)</em></p>
+<h3 id="42-3-week-tracking">4.2 實務場域動態體重預估驗證 (3-Week Tracking)</h3>
+<p>為確保系統的穩定性，本實驗採用固定高度與俯視角的攝影機架設方式。針對不同豬舍的環境差異，系統可透過擴充不同相機高度的基準資料集，並於現場部署時利用設定檔切換對應參數，以兼顧邊緣運算的輕量化與跨場域的適應性。
+為驗證系統於實際農場環境之時間推移泛化能力，我們於合作養豬場隨機抽樣 10 隻豬隻（初始約 50 公斤），進行為期三週的連續追蹤實驗。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">豬隻</th>
+<th style="text-align: center;">第 1 週預估</th>
+<th style="text-align: center;">第 1 週實際</th>
+<th style="text-align: center;">誤差 <span class="arithmatex">\(e\)</span></th>
+<th style="text-align: center;">第 2 週預估</th>
+<th style="text-align: center;">第 2 週實際</th>
+<th style="text-align: center;">誤差 <span class="arithmatex">\(e\)</span></th>
+<th style="text-align: center;">第 3 週預估</th>
+<th style="text-align: center;">第 3 週實際</th>
+<th style="text-align: center;">誤差 <span class="arithmatex">\(e\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">52.3 kg</td>
+<td style="text-align: center;">55.1 kg</td>
+<td style="text-align: center;">5.08%</td>
+<td style="text-align: center;">66.8 kg</td>
+<td style="text-align: center;">63.8 kg</td>
+<td style="text-align: center;">4.70%</td>
+<td style="text-align: center;">76.1 kg</td>
+<td style="text-align: center;">72.2 kg</td>
+<td style="text-align: center;">5.40%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">59.8 kg</td>
+<td style="text-align: center;">56.7 kg</td>
+<td style="text-align: center;">5.47%</td>
+<td style="text-align: center;">72.6 kg</td>
+<td style="text-align: center;">68.1 kg</td>
+<td style="text-align: center;">6.61%</td>
+<td style="text-align: center;">78.5 kg</td>
+<td style="text-align: center;">74.9 kg</td>
+<td style="text-align: center;">4.81%</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Avg</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4.76%</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5.48%</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4.85%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>(註：為版面簡潔僅節錄部分樣本，整體 10 隻樣本之平均誤差穩定收斂於 4.7% ~ 5.5% 區間)</em></p>
+<blockquote>
+<p>💡 <strong>商業落地結論</strong>：實驗證明，透過 精準的 MBB 最小物件框 搭配 ROI 空間限制，本系統成功克服了電腦視覺易受動物姿勢與環境干擾的技術瓶頸，展現出極高的跨生長週期穩定性，具備大規模商業落地的實戰價值。</p>
+</blockquote>
+<h2 id="5-milestones">5. 專案里程碑與後續行動 (Milestones)</h2>
+<p><strong>✅ 已達成里程碑 (Completed)</strong></p>
+<ul>
+<li>
+<p>[x] <strong>場域驗證與落地</strong>：完成屏東合作養豬場之實地部署與場域驗證，證實系統具備極高之商業價值。</p>
+</li>
+<li>
+<p>[x] <strong>邊緣極限部署</strong>：成功將 MobileNetV2-YOLOv3-Lite 部署於資源受限之 Edge SoC (GPA7750A)。</p>
+<ul>
+<li>
+<p><strong>底層優化</strong>：透過 ISP 即時降採樣克服 64MB 記憶體與 1.6 GB/s 頻寬限制。</p>
+</li>
+<li>
+<p><strong>效能指標</strong>：於真實環境中維持 15 FPS 之穩定即時推論效能。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>🚀 後續行動與研發計畫 (Future Works)</strong>
+- [ ] <strong>擴張全生長週期資料庫</strong>：</p>
+<pre><code>1. 針對 20-40 公斤仔豬建立早期特徵模型。
+
+2. 針對 80-110 公斤成豬建立後期特徵模型。
+
+3. 將上述模型整合，極大化系統之跨週期泛用性。
+</code></pre>
+<ul>
+<li>
+<p>[ ] <strong>完善智慧豬舍生態系</strong>：</p>
+<ul>
+<li>導入進階<strong>skeleton骨幹辨識</strong>，開發母豬分娩影像監測功能，以降低仔豬死亡率。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><em>Technical Document Last Updated: 2026-03</em> | <a href="#">回到頂部</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  </body>
+</html>
